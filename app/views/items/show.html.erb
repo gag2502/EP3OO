@@ -1,29 +1,69 @@
-<p id="notice"><%= notice %></p>
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+  </head>
+  <body>
 
-<p>
-  <strong>Nome:</strong>
-  <%= @item.nome %>
-</p>
+    <br>
+    <!-- You can now combine a row and column if you just need a 12 column row -->
+    <div class="row columns">
+      <nav aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+          <li><a href="http://localhost:3000/items/">Home</a></li>
 
-<p>
-  <strong>Description:</strong>
-  <%= @item.description %>
-</p>
+        </ul>
+      </nav>
+    </div>
 
-<p>
-  <strong>Release date:</strong>
-  <%= @item.release_date %>
-</p>
+    <div class="row">
+      <div class="medium-6 columns">
+        <img class="thumbnail" src="<%=@item.img_url%>">
+        <div class="row small-up-4">
+          <div class="column">
+          </div>
+          <div class="column">
+          </div>
+          <div class="column">
+          </div>
+          <div class="column">
+          </div>
+        </div>
+      </div>
+      <div class="medium-6 large-5 columns">
+        <h3><%=@item.nome%></h3>
+        <p><%=@item.description%></p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @item.price %>
-</p>
+        <label>Preço
+        <h2><%=@item.price%></h2>
+        </label>
 
-<p>
-  <strong>Img url:</strong>
-  <%= @item.img_url %>
-</p>
+        <div class="row">
+          <div class="small-3 columns">
 
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
+          </div>
+          <div class="small-9 columns">
+
+          </div>
+        </div>
+
+        <a href="#" class="button large expanded">Adicionar ao Carrinho</a>
+
+        <div class="small secondary expanded button-group">
+            <a href="https://www.facebook.com/lojadelivrosrenataegaby/" class="button">Facebook</a>
+            <a href="https://twitter.com/LojaDeLivrosRG" class="button">Twitter</a>
+          </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

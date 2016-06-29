@@ -8,7 +8,7 @@
   <body>
 
     <div class="row column text-center">
-      <img src="https://4.bp.blogspot.com/-I25mYhmYlT4/V3QyX8kMJvI/AAAAAAAABOU/srZWn2DIG2ovv3VqYQAs5QuMnwvPDGHlQCLcB/s1600/comoeuera.jpeg">
+    <a href="http://localhost:3000/items/1">  <img src="https://4.bp.blogspot.com/-I25mYhmYlT4/V3QyX8kMJvI/AAAAAAAABOU/srZWn2DIG2ovv3VqYQAs5QuMnwvPDGHlQCLcB/s1600/comoeuera.jpeg"></a>
       <hr>
     </div>
 
@@ -20,13 +20,16 @@
     <div class="row small-up-2 large-up-4">
         <% @items.each do |item| %>
       <div class="column">
+        <%= link_to item do %>
         <img class="thumbnail" src="<%= item.img_url %>">
         <h5>Nulla At Nulla Justo, Eget</h5>
         <p><%= item.price %></p>
       </div>
       <% end %>
+        <% end %>
     </div>
 
-  
+
+
 
 </html>
