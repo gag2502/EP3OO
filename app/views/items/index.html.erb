@@ -22,7 +22,7 @@
       <div class="column">
         <%= link_to item do %>
         <img class="thumbnail" src="<%= item.img_url %>">
-        <h5>Nulla At Nulla Justo, Eget</h5>
+        <h5><%=item.nome%></h5>
         <p><%= item.price %></p>
       </div>
       <% end %>
