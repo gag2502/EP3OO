@@ -5,7 +5,7 @@
     <title>Foundation | Welcome</title>
     <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
   </head>
-  <body>
+    <body>
 
     <div class="row column text-center">
     <a href="http://localhost:3000/items/1">  <img src="https://4.bp.blogspot.com/-I25mYhmYlT4/V3QyX8kMJvI/AAAAAAAABOU/srZWn2DIG2ovv3VqYQAs5QuMnwvPDGHlQCLcB/s1600/comoeuera.jpeg"></a>
@@ -23,7 +23,7 @@
         <%= link_to item do %>
         <img class="thumbnail" src="<%= item.img_url %>">
         <h5><%=item.nome%></h5>
-        <p><%= item.price %></p>
+        <p>R$ <%= item.price %></p>
       </div>
       <% end %>
         <% end %>

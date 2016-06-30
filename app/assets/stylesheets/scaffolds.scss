@@ -13,21 +13,21 @@ p, ol, ul, td {
 }
 
 pre {
-  background-color: #eee;
+  background-color: #00000;
   padding: 10px;
   font-size: 11px;
 }
 
 a {
-  color: #000;
+  color: #00000;
 
   &:visited {
     color: #666;
   }
 
   &:hover {
-    color: #fff;
-    background-color: #000;
+    color: #000000;
+    background-color: #FF1493;
   }
 }
 
@@ -53,7 +53,7 @@ div {
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
-  background-color: #f0f0f0;
+  background-color: #00000;
 
   h2 {
     text-align: left;
@@ -62,8 +62,8 @@ div {
     font-size: 12px;
     margin: -7px;
     margin-bottom: 0px;
-    background-color: #c00;
-    color: #fff;
+    background-color: #00000;
+    color: #00000;
   }
 
   ul li {
