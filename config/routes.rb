@@ -1,15 +1,15 @@
 Rails.application.routes.draw do
   
-  devise_for :users
+  #devise_for :users
   #devise_for :installs
   resources :items
   root 'items#index'
- #devise_for :users, path_names: {sign_in: 'login', sign_out: 'logout',
+ #devise_for :users path_names: {sign_in: 'login', sign_out: 'logout',
       #password: 'secret', confirmation: 'verification',
       #registration: 'register', edit: 'edit/profile'
     #}
   #devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
-  #devise_for :users, path_names: {sign_in: 'login', sign_out: 'logout', sign_up: 'register'}
+  devise_for :users, path_names: {sign_in: 'login', sign_out: 'logout', sign_up: 'register'}
   
 
 
