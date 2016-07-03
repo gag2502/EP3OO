@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 
     <title><%= content_for?(:title) ? yield(:title) : "Loja de Livros Renata e Gaby" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+
+
+
   </head>
 
   <body>
@@ -27,11 +32,12 @@
     <div class="top-bar">
       <div class="top-bar-left">
         <ul class="menu">
-          <li><a href="http://localhost:3000/items"><img src="  https://3.bp.blogspot.com/-AzYeOgqcDAc/V3RWbpphjYI/AAAAAAAABOk/xJVmLL_Vib8dcJ-YWQyFtvXbjMFFaBa-wCLcB/s1600/Logo-Loja.jpeg"></a></li>
+          <li><a href="http://localhost:3000"><img src="  https://3.bp.blogspot.com/-AzYeOgqcDAc/V3RWbpphjYI/AAAAAAAABOk/xJVmLL_Vib8dcJ-YWQyFtvXbjMFFaBa-wCLcB/s1600/Logo-Loja.jpeg"></a></li>
           <li><a href="https://gitlab.com/gabygama_22/EP3OO_Teste">GitLab</a></li>
           <li><a href="#">YouTube</a></li>
         </ul>
       </div>
+
       <div class="top-bar-right">
         <ul class="menu">
           <li><a href="#">Three</a></li>
@@ -67,11 +73,15 @@
       </div>
     </div>
 
+
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+
     <script>
       $(document).foundation();
     </script>
+
+
 
 </html>
 
