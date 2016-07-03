@@ -13,20 +13,20 @@ p, ol, ul, td {
 }
 
 pre {
-  background-color: #00000;
+  background-color: #000;
   padding: 10px;
   font-size: 11px;
 }
 
 a {
-  color: #00000;
+  color: #000;
 
   &:visited {
     color: #666;
   }
 
   &:hover {
-    color: #000000;
+    color: #000;
     background-color: #FF1493;
   }
 }
@@ -53,7 +53,7 @@ div {
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
-  background-color: #00000;
+  background-color: #333;
 
   h2 {
     text-align: left;
@@ -62,8 +62,8 @@ div {
     font-size: 12px;
     margin: -7px;
     margin-bottom: 0px;
-    background-color: #00000;
-    color: #00000;
+    background-color: #000;
+    color: #000;
   }
 
   ul li {
