@@ -40,10 +40,25 @@
 
       <div class="top-bar-right">
         <ul class="menu">
-          <li><a href="#">Three</a></li>
-          <li><a href="#">Four</a></li>
-          <li><a href="#">Five</a></li>
-          <li><a href="#">Six</a></li>
+       
+        <!-- adaptado -->
+<%if signed_in?%>
+          <!--parte do li My cart -->
+          
+          <li><%=link_to current_user.email, edit_user_registration_path, class: "button"%></li>
+          <li><%=link_to "Sair", destroy_user_session_path, method: :delete, class: "button"%></li>
+        <%else%>
+          <li><%=link_to "Entrar", new_user_session_path, class: "button"%></li>
+        <li><%=link_to "Crie uma conta", new_user_registration_path, class: "button"%></li>
+        <%end%>
+      <!-- fim do adaptado -->
+
+          <!--<li><a href="#">Three</a></li> 
+          <li><%=link_to "Entrar", new_user_session_path, class: "button"%></li>
+          <li><a href="#">Four</a></li> 
+          <li><%=link_to "Crie uma conta", new_user_registration_path, class: "button"%></li>
+          <!--<li><a href="#">Five</a></li>
+          <li><a href="#">Six</a></li> -->
         </ul>
       </div>
     </div>
@@ -57,7 +72,7 @@
       <div class="row">
         <div class="large-4 columns">
           <h5>Loja Virtual de Livros</h5>
-          <p>Projeto da disciplina Orientação á Objetos 1/2016 desenvolvido por Gabriela e Renata.</p>
+          <p>Projeto da disciplina Orientação a Objetos 1/2016 desenvolvido por Gabriela e Renata.</p>
           <p>UnB - FGA</p>
         </div>
         <div class="large-3 large-offset-2 columns">
@@ -89,3 +104,5 @@
 
   </body>
 </html>
+
+

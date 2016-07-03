@@ -1,11 +1,23 @@
 Rails.application.routes.draw do
+  
+  #devise_for :users
+  #devise_for :installs
   resources :items
+  root 'items#index'
+ #devise_for :users path_names: {sign_in: 'login', sign_out: 'logout',
+      #password: 'secret', confirmation: 'verification',
+      #registration: 'register', edit: 'edit/profile'
+    #}
+  #devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
+  devise_for :users, path_names: {sign_in: 'login', sign_out: 'logout', sign_up: 'register'}
+  
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-root 'items#index'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
