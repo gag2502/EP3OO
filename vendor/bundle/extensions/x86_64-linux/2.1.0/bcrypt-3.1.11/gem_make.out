@@ -1,0 +1,20 @@
+current directory: /home/gabriela/EP3OO_Teste/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
+/usr/bin/ruby2.1 -r ./siteconf20160702-12075-1img87q.rb extconf.rb
+creating Makefile
+
+current directory: /home/gabriela/EP3OO_Teste/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
+make "DESTDIR=" clean
+
+current directory: /home/gabriela/EP3OO_Teste/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
+make "DESTDIR="
+compiling crypt_blowfish.c
+compiling bcrypt_ext.c
+compiling crypt_gensalt.c
+compiling wrapper.c
+compiling crypt.c
+linking shared-object bcrypt_ext.so
+
+current directory: /home/gabriela/EP3OO_Teste/vendor/bundle/gems/bcrypt-3.1.11/ext/mri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20160702-12075-1hqri1x
+installing default bcrypt_ext libraries

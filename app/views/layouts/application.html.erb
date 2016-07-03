@@ -32,7 +32,7 @@
     <div class="top-bar">
       <div class="top-bar-left">
         <ul class="menu">
-          <li><a href="http://localhost:3000"><img src="  https://3.bp.blogspot.com/-AzYeOgqcDAc/V3RWbpphjYI/AAAAAAAABOk/xJVmLL_Vib8dcJ-YWQyFtvXbjMFFaBa-wCLcB/s1600/Logo-Loja.jpeg"></a></li>
+          <li><a href="http://localhost:3000/items"><img src="  https://3.bp.blogspot.com/-AzYeOgqcDAc/V3RWbpphjYI/AAAAAAAABOk/xJVmLL_Vib8dcJ-YWQyFtvXbjMFFaBa-wCLcB/s1600/Logo-Loja.jpeg"></a></li>
           <li><a href="https://gitlab.com/gabygama_22/EP3OO_Teste">GitLab</a></li>
           <li><a href="#">YouTube</a></li>
         </ul>
@@ -40,11 +40,11 @@
 
       <div class="top-bar-right">
         <ul class="menu">
-       
+
         <!-- adaptado -->
 <%if signed_in?%>
           <!--parte do li My cart -->
-          
+
           <li><%=link_to current_user.email, edit_user_registration_path, class: "button"%></li>
           <li><%=link_to "Sair", destroy_user_session_path, method: :delete, class: "button"%></li>
         <%else%>
@@ -53,9 +53,9 @@
         <%end%>
       <!-- fim do adaptado -->
 
-          <!--<li><a href="#">Three</a></li> 
+          <!--<li><a href="#">Three</a></li>
           <li><%=link_to "Entrar", new_user_session_path, class: "button"%></li>
-          <li><a href="#">Four</a></li> 
+          <li><a href="#">Four</a></li>
           <li><%=link_to "Crie uma conta", new_user_registration_path, class: "button"%></li>
           <!--<li><a href="#">Five</a></li>
           <li><a href="#">Six</a></li> -->
@@ -104,5 +104,3 @@
 
   </body>
 </html>
-
-
