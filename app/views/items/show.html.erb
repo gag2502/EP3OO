@@ -41,17 +41,36 @@
           </div>
         </div>
 
+<<<<<<< HEAD
         <a href="#" class="button large " style="float:right; margin: 15px ">Adicionar ao Carrinho</a>
 
          <div class="row">
+=======
+      <!--  <a href="#" class="button large expanded">Adicionar ao Carrinho</a> -->
+
+        <div class="row">
+  <div class="large-12 columns">
+      <div class="large-4 small-12 columns">
+        <img src="<%= @item.img_url %>">
+      </div>
+      <br>
+<!--Add button with add and remove-->
+        <div class="row">
+>>>>>>> f58bb56b9ea80ccd6f76de4b549d454661be3793
           <%if signed_in?%>
             <%=link_to "", class: "button", data: {target: @cart_action, addUrl: add_to_cart_path(@item), removeUrl: remove_from_cart_path(@item)} do%>
-              <span><%=@cart_action%></span> Cart
+              <span><%=@cart_action%></span> 
             <%end%>
           <%end%>
         </div>
+<<<<<<< HEAD
 
         <div class="small secondary button-group" style="float:right; margin: 15px">
+=======
+     <!-- end button-->
+        <br>
+        <div class="small secondary expanded button-group">
+>>>>>>> f58bb56b9ea80ccd6f76de4b549d454661be3793
             <a href="https://www.facebook.com/lojadelivrosrenataegaby/" class="button">Facebook</a>
             <a href="https://twitter.com/LojaDeLivrosRG" class="button" >Twitter</a>
 

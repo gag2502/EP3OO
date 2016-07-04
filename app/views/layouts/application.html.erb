@@ -41,7 +41,7 @@
 
         <!-- adaptado -->
 <%if signed_in?%>
-          <!--parte do li My cart -->
+          <!-- My cart -->
            <li>
             <%= link_to cart_path, class:"button" do%>
               My Cart
@@ -55,14 +55,8 @@
         <li><%=link_to "Crie uma conta", new_user_registration_path, class: "button"%></li>
         <li><%=link_to "Admin", href="http://localhost:3000/admin/login", class: "button"%></li>
         <%end%>
-      <!-- fim do adaptado -->
+      <!-- fim de My Cart -->
 
-          <!--<li><a href="#">Three</a></li>
-          <li><%=link_to "Entrar", new_user_session_path, class: "button"%></li>
-          <li><a href="#">Four</a></li>
-          <li><%=link_to "Crie uma conta", new_user_registration_path, class: "button"%></li>
-          <!--<li><a href="#">Five</a></li>
-          <li><a href="#">Six</a></li> -->
         </ul>
       </div>
     </div>
@@ -95,6 +89,7 @@
 
     <script>
       $(document).foundation();
+      <%= javascript_include_tag "application" %>
     </script>
 
 </html>
