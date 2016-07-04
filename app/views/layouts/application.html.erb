@@ -53,6 +53,7 @@
         <%else%>
           <li><%=link_to "Entrar", new_user_session_path, class: "button"%></li>
         <li><%=link_to "Crie uma conta", new_user_registration_path, class: "button"%></li>
+        <li><%=link_to "Admin", href="http://localhost:3000/admin/login", class: "button"%></li>
         <%end%>
       <!-- fim do adaptado -->
 
@@ -69,7 +70,7 @@
 
   <%= yield %>
 
-    <div class="callout large secondary">
+    <div class="callout secondary">
       <div class="row">
         <div class="large-4 columns">
           <h5>Loja Virtual de Livros</h5>

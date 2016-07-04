@@ -14,3 +14,4 @@ CSV.foreach(Rails.root.join("db/seeds_data/items.csv"), headers: true) do |row|
     description: row[3],
     img_url: row[4])
 end
+AdminUser.create!(email: 'adminrg@gmail.com', password: '123456', password_confirmation: '123456')

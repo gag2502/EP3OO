@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 
   </head>
-  <body>
+  <body >
 
     <br>
     <!-- You can now combine a row and column if you just need a 12 column row -->
-    <div class="row columns">
+    <div class="row columns" >
       <nav aria-label="You are here:" role="navigation">
         <ul class="breadcrumbs">
           <li><a href="http://localhost:3000/items/">Início</a></li>
@@ -21,30 +21,18 @@
       </nav>
     </div>
 
-    <div class="row">
-      <div class="medium-6 columns">
-        <img class="thumbnail" src="<%=@item.img_url%>">
-        <div class="row small-up-4">
-          <div class="column">
-          </div>
-          <div class="column">
-          </div>
-          <div class="column">
-          </div>
-          <div class="column">
-          </div>
+    <div style="margin: 15px ">
+            <img class="thumbnail" src="<%=@item.img_url%>"  style="width: 390px; height: 300px; margin: 15px; float:left; " />
+            <h3><%=@item.nome%></h3>
+            <h6><%=@item.release_date%></h6>
+            <p><%=@item.description%></p>
         </div>
-      </div>
-      <div class="medium-6 large-5 columns">
-        <h3><%=@item.nome%></h3>
-        <h6><%=@item.release_date%></h6>
-        <p><%=@item.description%></p>
 
         <label>Preço
         <h2>R$ <%=@item.price%></h2>
         </label>
 
-        <div class="row">
+        <div class="row" >
           <div class="small-3 columns">
 
           </div>
@@ -53,8 +41,8 @@
           </div>
         </div>
 
-        <a href="#" class="button large expanded">Adicionar ao Carrinho</a>
-        
+        <a href="#" class="button large " style="float:right; margin: 15px ">Adicionar ao Carrinho</a>
+
          <div class="row">
           <%if signed_in?%>
             <%=link_to "", class: "button", data: {target: @cart_action, addUrl: add_to_cart_path(@item), removeUrl: remove_from_cart_path(@item)} do%>
@@ -63,12 +51,14 @@
           <%end%>
         </div>
 
-        <div class="small secondary expanded button-group">
+        <div class="small secondary button-group" style="float:right; margin: 15px">
             <a href="https://www.facebook.com/lojadelivrosrenataegaby/" class="button">Facebook</a>
-            <a href="https://twitter.com/LojaDeLivrosRG" class="button">Twitter</a>
+            <a href="https://twitter.com/LojaDeLivrosRG" class="button" >Twitter</a>
+
           </div>
         </div>
     </div>
+    <br>
     <br>
 
 
