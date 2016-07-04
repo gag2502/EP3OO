@@ -10,6 +10,8 @@ class ItemsController < ApplicationController
   # GET /items/1
   # GET /items/1.json
   def show
+    @item = Item.find(params[:id])
+    @cart_action = @item.cart_action current_user.try :id
   end
 
   # GET /items/new
@@ -69,6 +71,6 @@ class ItemsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def item_params
-      params.require(:item).permit(:nome, :description, :release_date, :price, :img_url)
+      params.require(:item).permit(:name, :description, :price, :release_date, :img_url)
     end
 end

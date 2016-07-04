@@ -12,8 +12,6 @@
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
 
-
-
   </head>
 
   <body>
@@ -44,7 +42,12 @@
         <!-- adaptado -->
 <%if signed_in?%>
           <!--parte do li My cart -->
-
+           <li>
+            <%= link_to cart_path, class:"button" do%>
+              My Cart
+              (<span class="cart-count"><%=current_user.cart_count%></span>)
+            <%end%>
+          </li>
           <li><%=link_to current_user.email, edit_user_registration_path, class: "button"%></li>
           <li><%=link_to "Sair", destroy_user_session_path, method: :delete, class: "button"%></li>
         <%else%>
@@ -64,15 +67,13 @@
     </div>
     <!-- End Top Bar -->
 
-
   <%= yield %>
-
 
     <div class="callout large secondary">
       <div class="row">
         <div class="large-4 columns">
           <h5>Loja Virtual de Livros</h5>
-          <p>Projeto da disciplina Orientação á Objetos 1/2016 desenvolvido por Gabriela e Renata.</p>
+          <p>Projeto da disciplina Orientação a Objetos 1/2016 desenvolvido por Gabriela e Renata.</p>
           <p>UnB - FGA</p>
         </div>
         <div class="large-3 large-offset-2 columns">
@@ -88,7 +89,6 @@
       </div>
     </div>
 
-
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
 
@@ -96,11 +96,7 @@
       $(document).foundation();
     </script>
 
-
-
 </html>
-
-
 
   </body>
 </html>

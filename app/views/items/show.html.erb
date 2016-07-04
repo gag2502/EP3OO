@@ -54,6 +54,14 @@
         </div>
 
         <a href="#" class="button large expanded">Adicionar ao Carrinho</a>
+        
+         <div class="row">
+          <%if signed_in?%>
+            <%=link_to "", class: "button", data: {target: @cart_action, addUrl: add_to_cart_path(@item), removeUrl: remove_from_cart_path(@item)} do%>
+              <span><%=@cart_action%></span> Cart
+            <%end%>
+          <%end%>
+        </div>
 
         <div class="small secondary expanded button-group">
             <a href="https://www.facebook.com/lojadelivrosrenataegaby/" class="button">Facebook</a>
