@@ -1,2 +1,47 @@
-<h1>Carts#show</h1>
-<p>Find me in app/views/carts/show.html.erb</p>
+<div id="mycart" class="small-10 small-centered medium-8 large-8 column">
+  <div class="p1 glassy-bg mb1 text-center radius-l1 radius-r1">
+    <h4>Meus Livros</h4>
+    <p class="mb0"> Você selecionou <span class="cart-count"><%=current_user.cart_count%></span> livros!</p>
+  </div>
+
+  <% @cart_items.each do |item|%>
+  <div data-equalizer class="cart-item large-12 column mb1" >
+    <div class="column large-2 text-center p0" data-equalizer-watch>
+      <%=link_to item do%>
+        <img class="radius-l1" src= '<%= item.img_url %>'>
+      <%end%>
+    </div>
+    <div class="column large-7 glassy-bg text-center" data-equalizer-watch>
+        <p class="scale ptm"> <%= item.nome %> </p>
+    </div>
+    <div class="column large-3 primary-bg text-center radius-r1" data-equalizer-watch>
+      <%=link_to "" , data: {targetUrl: remove_from_cart_path(item)} do%>
+        <i class="right">X</i>
+      <%end%>
+      <h4 class="scale">R$ <%= item.price %></h4>
+    </div>
+    <br>
+  </div>
+  <br>
+  <br>
+  <br>
+  <%end%>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

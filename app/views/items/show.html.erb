@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
 
   </head>
-  <body >
+  <body>
 
     <br>
     <!-- You can now combine a row and column if you just need a 12 column row -->
-    <div class="row columns" >
+    <div class="row columns">
       <nav aria-label="You are here:" role="navigation">
         <ul class="breadcrumbs">
           <li><a href="http://localhost:3000/items/">Início</a></li>
@@ -22,17 +22,17 @@
     </div>
 
     <div style="margin: 15px ">
-            <img class="thumbnail" src="<%=@item.img_url%>"  style="width: 390px; height: 300px; margin: 15px; float:left; " />
-            <h3><%=@item.nome%></h3>
-            <h6><%=@item.release_date%></h6>
-            <p><%=@item.description%></p>
-        </div>
+              <img class="thumbnail" src="<%=@item.img_url%>"  style="width: 390px; height: 300px; margin: 15px; float:left; " />
+              <h3><%=@item.nome%></h3>
+              <h6><%=@item.release_date%></h6>
+              <p><%=@item.description%></p>
+          </div>
 
-        <label>Preço
-        <h2>R$ <%=@item.price%></h2>
-        </label>
+          <label>Preço
+          <h2>R$ <%=@item.price%></h2>
+          </label>
 
-        <div class="row" >
+        <div class="row">
           <div class="small-3 columns">
 
           </div>
@@ -41,39 +41,20 @@
           </div>
         </div>
 
-<<<<<<< HEAD
-        <a href="#" class="button large " style="float:right; margin: 15px ">Adicionar ao Carrinho</a>
-
-         <div class="row">
-=======
-      <!--  <a href="#" class="button large expanded">Adicionar ao Carrinho</a> -->
-
-        <div class="row">
-  <div class="large-12 columns">
-      <div class="large-4 small-12 columns">
-        <img src="<%= @item.img_url %>">
-      </div>
-      <br>
-<!--Add button with add and remove-->
-        <div class="row">
->>>>>>> f58bb56b9ea80ccd6f76de4b549d454661be3793
+         <div class="row" style="float:right; margin: 13px ">
           <%if signed_in?%>
-            <%=link_to "", class: "button", data: {target: @cart_action, addUrl: add_to_cart_path(@item), removeUrl: remove_from_cart_path(@item)} do%>
+            <%=link_to "", class: " button", data: {target: @cart_action, addUrl: add_to_cart_path(@item), removeUrl: remove_from_cart_path(@item)} do%>
               <span><%=@cart_action%></span> 
             <%end%>
           <%end%>
         </div>
-<<<<<<< HEAD
-
-        <div class="small secondary button-group" style="float:right; margin: 15px">
-=======
-     <!-- end button-->
         <br>
-        <div class="small secondary expanded button-group">
->>>>>>> f58bb56b9ea80ccd6f76de4b549d454661be3793
-            <a href="https://www.facebook.com/lojadelivrosrenataegaby/" class="button">Facebook</a>
-            <a href="https://twitter.com/LojaDeLivrosRG" class="button" >Twitter</a>
+        <br>
+        <br>
 
+        <div class="small secondary button-group" style="float:right; margin: 8px">
+            <a href="https://www.facebook.com/lojadelivrosrenataegaby/" class="button">Facebook</a>
+            <a href="https://twitter.com/LojaDeLivrosRG" class="button">Twitter</a>
           </div>
         </div>
     </div>
