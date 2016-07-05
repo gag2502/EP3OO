@@ -14,11 +14,11 @@ Após isso, será necessário abrir a pasta do projeto no terminal e instalar as
 
 Para isso, deve-se dar o comando bundle install no terminal e logo após instalar cada Gem:
 
-$ rails g foundation:install
-$ rails g devise:install
-$ sudo apt-get install redis-server (Digite redis-server no terminal para receber instruções,
-caso não funcione esse comando)
-$ rails g active_admin:install
+- $ rails g foundation:install
+- $ rails g devise:install
+- $ sudo apt-get install redis-server (Digite redis-server no terminal para receber instruções,
+- caso não funcione esse comando)
+- $ rails g active_admin:install
 
 Tendo feito isso será necessário dar o comando rake db:migrate para que os dados de usuário admin padrão sejam migrados para o banco de dados.
 Agora basta dar o comando rails s no terminal para que a página web seja exibida no browser.
